@@ -1,0 +1,87 @@
+
+<!--loading page-->
+<div ng-show="loading">
+  <div id="loading">
+    <img id="loading-image" src="img/loader3.gif" alt="Loading..." />
+  </div>
+</div>
+
+
+
+<div class="" style="background-color:white;background-image:url(img/registerpng-02.png);margin-bottom:-80px;position:fixed" id="backimage">
+
+
+<div style="padding-top: 90px;margin-left: -45px;">
+  <!--first row-->
+  <div class="row row-adjust">
+    <div class="col-xs-4">
+      <img src="img/NAME-01.png" alt="" id="" style="height:30px;width:30px;margin-left:80px;margin-top:8px">
+    </div>
+    <div class="col-xs-8">
+      <!-- Textfield with Floating Label -->
+
+       <form class="" action="index.html" method="post">
+         <input type="text" placeholder="Name" name="" value="" ng-model="user.name" id="textfield">
+         <hr style="margin-top:1px">
+       </form>
+
+    </div>
+  </div>
+  <!--second  row-->
+  <div class="row row-adjust">
+    <div class="col-xs-4">
+      <img src="img/EMAIL-01.png" alt="" id="" style="height:23px;width:30px;margin-left:80px;margin-top:30px">
+    </div>
+    <div class="col-xs-8">
+      <!-- Textfield with Floating Label -->
+
+      <form class="" action="index.html" method="post">
+        <input type="text" placeholder="Email" name="" value="" ng-model="user.email" id="textfield" style="margin-top:25px">
+        <hr style="margin-top:1px">
+      </form>
+
+    </div>
+  </div>
+
+  <!--third row-->
+  <div class="row">
+    <div class="col-xs-4 ">
+      <img src="img/PHONE-01.png" alt="" id="" style="height:27px;width:30px;margin-left:80px;margin-top:25px">
+    </div>
+    <div class="col-xs-8" >
+      <!-- Textfield with Floating Label -->
+
+      <form class="" action="index.html" method="post">
+        <input type="text" placeholder="Mobile" name="" ng-model="user.mobile_no" id="textfield" style="margin-top:25px">
+        <hr style="margin-top:1px">
+      </form>
+
+    </div>
+  </div>
+
+</div>
+<!--register button-->
+
+  <div class="register" ng-click="register()">
+    <p style="padding-top:5px">Register</p>
+  </div>
+
+<!--status-->
+<div class="text-center">
+  <p style="color:red;margin-top:20px">{{status}}</p>
+</div>
+<!--line-->
+<hr id="bottom-line">
+<!--lower heading -->
+<div class="text-center" style="padding-bottom:47%">
+  <p><span style="color:grey">Have an account? </span><span><a href="#login" style="color:#218289">Login</a></span></p>
+</div>
+<!--heymedy logo
+
+  <div class="text-center" style="padding-top:30px;padding-bottom:60px;">
+    <img class="logo" src="img/heymedylogo-06.png" alt="">
+  </div>
+
+    -->
+
+</div>

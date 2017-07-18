@@ -1,0 +1,146 @@
+#backimage{
+  width: 100%;
+  background-size: 100% 100%;
+ }
+ #icon{
+   padding-top: 30px;
+   padding-left: 80px;
+   color: #218289;
+ }
+ #textfield_search{
+   margin-top: 15px;
+   border: none;
+   background: transparent;
+ }
+ .loc_auto{
+   margin-top: 15px;
+   border: none;
+   background: transparent;
+ }
+ .loc_list{
+   background-color: white;
+   height: auto;
+   width: auto;
+   padding: 5px 0px 5px 5px;
+   margin-top: -6px;
+   position: relative;
+   z-index: 2;
+ }
+ #textfieldcode{
+   padding-bottom: 40px;
+   border: none;
+   background: transparent;
+ }
+ #nameicon{
+   height: 50px;
+   width: 50px;
+ }
+ .row-adjust{
+   margin-bottom: -24px;
+
+ }
+ #bottom-line{
+   margin-top: 80px;
+   border-bottom: 1px solid #218289;
+ }
+ .register{
+   width:96%;
+   height: 36px;
+   text-align:center;
+   color:white;
+   background-color: #218289;
+   border-radius: 5px;
+   font-size:1.4em;
+   margin-top: 20px;
+   margin-left: 8px;
+   box-shadow: 0px 3px 3px  rgba(0,0,0,0.2);
+
+ }
+ .verify{
+   width:98%;
+   height: 36px;
+   text-align:center;
+   color:white;
+   background-color: #218289;
+   border-radius: 5px;
+   font-size:1.4em;
+   margin-top: 20px;
+   margin-left: 4px;
+   box-shadow: 0px 3px 3px  rgba(0,0,0,0.2);
+
+ }
+ .logo{
+   width: 25%;
+   height: 25%;
+   padding-top: 40%;
+}
+.heading{
+  color: grey;
+  padding-top: 180px;
+  margin-bottom: -10px;
+}
+.login{
+  width:96%;
+  height: 36px;
+  text-align:center;
+  color:white;
+  background-color: #218289;
+  border-radius: 5px;
+  font-size:1.4em;
+  margin-top: 20px;
+  margin-left: 8px;
+  box-shadow: 0px 3px 3px  rgba(0,0,0,0.2);
+
+}
+
+#phoneicon {
+
+  padding-left: 13%;
+  padding-top:75%;
+  margin-bottom: auto;
+  color: #218289;
+}
+
+#enternum {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 60px;
+}
+
+.hrbottom{
+  margin-top: 80px;
+  border-bottom: 1px solid #218289;
+}
+
+#loading{
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ position: fixed;
+ display: block;
+ opacity: 0.7;
+ background-color: white;
+ z-index: 99;
+ text-align: center;
+}
+
+#loading-image {
+ position: absolute;
+ top: 41%;
+ text-align: center;
+ z-index: 100;
+}
+#loading_htips{
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ position: fixed;
+ margin-top: 50px;
+ display: block;
+ opacity: 1;
+ background-color: white;
+ z-index: 2;
+ text-align: center;
+}

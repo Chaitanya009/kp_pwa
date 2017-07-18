@@ -1,0 +1,126 @@
+
+<body style="background-color:#D4DFED">
+  <!--nav bar-->
+  <header>
+
+    <div class="upperBar">
+      <i class="material-icons" ng-click="goback()" style="padding:13px">arrow_back</i><h6 class="nav-heading"> Sakara Hospital</h6>
+      <div>
+          <a href="#search"><i class="fa fa-search fa-2x" aria-hidden="true" id="search_icon_in"></i></a>
+      </div>
+      <!--Drop down menu-->
+      <button ng-controller="myCtrl" ng-click="toggleClass()" class="dropbtn" style="width: 10%; border: none; background: none;margin-right:24px">
+        <!-- <i class="fa fa-bars fa-2x" style="padding: 10px;"></i> -->
+        <i class="material-icons dropdown">more_vert</i>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#profile"><button>Profile</button></a>
+        <a href="#myorders"><button>My Orders</button></a>
+        <button>Logout</button>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="" id="page">
+
+  <!--card-->
+  <div class="card" style="width:100%;margin-top:42px;margin-left:0px">
+    <img class="card-img-top" src="img/loadingpage.png" lazy-img="https://hrelate.in/img/user_profile/sakra-world-hospital-bellandur-pune438081496.jpg" alt="" id="hospitalImaged">
+    <img ng-src="img/expired.png" alt="" id="statusimaged">
+    <!--Hospital Detail-->
+    <div>
+      <!--left content-->
+      <div class="container" style="margin-top:-10px">
+        <h5 style="line-height:90%">Sakara Hospital <br><span style="font-size:0.8em;color:grey">Alopathy</span></h5>
+      </div>
+
+      <hr style="margin-top:-3px">
+    </div>
+    <div>
+      <div class="dashedBox" style="margin-left:10px;margin-right:10px;">
+          <div class="container">
+             <p>25% off on full body checkups</p>
+             <p style="margin-top:-5px;margin-bottom:0px"><i class="fa fa-inr" style="color:grey"></i> <strike style="color:grey">150</strike> <span style="color:#218289">100</span></p>
+          </div>
+          <!--no of coupons-->
+        <div>
+          <div class="no-of-coup">
+            <p style="color:black"> Quantity:2 </p>
+            <p ng-click="toggle = !toggle" style="font-size:0.8em;margin-top:-10px;margin-left:-2px">{{toggleText}} <img ng-src="{{imgurl}}" alt="" id="showmoreicon"></p>
+          </div>
+       </div>
+      </div>
+      <!--date-->
+      <div class="">
+        <div class="">
+          <img src="img/DATE-01.png" alt="" id="calendericon">
+        </div>
+        <div>
+          <p style="color:grey;font-size:0.8em;margin-left:45px;margin-top:-23px">29th JAN</p>
+        </div>
+     </div>
+
+    </div>
+    <!--know more card-->
+    <div ng-show="cardshow">
+
+    <div class="know">
+      <div class="days">
+        <ul style="padding-top:20px">
+          <li><img src="img/DATE-01.png" alt="" id="dateicon"></li>
+          <li style="margin-left:10px"><img src="img/SUNCLR-01.png" alt="" id="day"></li>
+          <li><img src="img/MONCLR-01.png" alt="" id="day"></li>
+          <li><img src="img/TUE-01.png" alt="" id="day"></li>
+          <li><img src="img/WED-01.png" alt="" id="day"></li>
+          <li><img src="img/THU-01.png" alt="" id="day"></li>
+          <li><img src="img/FRI-01.png" alt="" id="day"></li>
+          <li><img src="img/SAT-01.png" alt="" id="day"></li>
+        </ul>
+        <div class="">
+          <img src="img/TIME-01.png" alt="" id="clockicon">
+          <p class="timing"> 9:30 AM to 6:00 PM</p>
+        </div>
+      </div>
+      <div style="margin-left:40px;padding-bottom:20px;font-size:0.8em">
+        <ul>
+          <li>Full body checkups</li>
+          <li>Full body checkups</li>
+          <li>Full body checkups</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+
+<!--Address-->
+<div class="card" style="width:100%;margin-left:0px">
+  <img class="card-img-top" src="img/harvard-map-google.jpg" alt="map" id="mapimage">
+  <div class="">
+    <p class="container">Address</p>
+    <hr style="margin-top:-5px">
+    <div class="container" style="font-size:0.9em;margin-top:-5px">
+      <p>Level 3,Transit Second,The Forum Value </p>
+      <p style="margin-top:-16px">Hebbal Road, Bangalore </p>
+      <p style="margin-top:-16px">Karnataka,560056</p>
+    </div>
+    <!--phone num-->
+    <p class="container" style="font-size:0.9em;margin-top:-6px"><i class="fa fa-phone" aria-hidden="true"></i> 99457485556</p>
+    <!--website-->
+    <p class="container" style="font-size:0.9em;margin-top:-6px"><i class="fa fa-envelope" aria-hidden="true"></i> www.sakara.com</p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+</body>

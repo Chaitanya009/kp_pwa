@@ -1,0 +1,71 @@
+
+
+  <div class="" style="background-image:url(img/registerpng-02.png);position:fixed;background-color:#ECEFF1;padding-bottom:190%;" id="backimage">
+
+  <!--nav bar-->
+
+
+    <div class="upperBar">
+      <i class="material-icons" ng-click="goback()" style="padding:13px">arrow_back</i><h6 class="nav-heading"> Change Location</h6>
+      <div>
+          <a href="#search"><i class="fa fa-search fa-2x" aria-hidden="true" id="search_icon_in"></i></a>
+      </div>
+      <!--Drop down menu-->
+      <button ng-controller="myCtrl" ng-click="toggleClass()" class="dropbtn" style="width: 10%; border: none; background: none;margin-right:24px">
+        <!-- <i class="fa fa-bars fa-2x" style="padding: 10px;"></i> -->
+        <i class="material-icons dropdown">more_vert</i>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#profile"><button>Profile</button></a>
+        <a href="#myorders"><button>My Orders</button></a>
+        <button>Logout</button>
+
+      </div>
+    </div>
+
+
+
+
+<!--search card-->
+<div class="" style="margin-top:100px">
+
+<div class="search-card">
+  <div class="">
+    <img src="img/SEARCHbar-01.png" alt="" id="searchicon">
+  </div>
+  <div style="margin-left:45px;margin-top:-55px">
+     <!--Simple Textfield  -->
+         <input type="text" class="loc_auto" placeholder="Enter Location" name="" value="" id="location" ng-change="search()" ng-model="search_loc">
+       <hr style="margin-top:1px">
+      <ul id="loc_list" style="list-style-type: none;">
+
+      </ul>
+   </div>
+  </div>
+
+ </div>
+
+  <!--get location-->
+  <div class="text-center">
+    <h4 style="color:#218289;margin-top:30px">OR</h4>
+  </div>
+  <!--get location-->
+  <div class="text-center" ng-click="get_loc()">
+    <div style="margin-top:30px">
+      <i class="material-icons" style="font-size: 52px ;color: #218289">gps_fixed</i>
+    </div>
+    <div class="">
+      <h3 style="color: #218289">Get Location</h3>
+    </div>
+    <div class="" ng-show="loc_disp">
+      <p>Lat : {{latitude}}</p>
+      <p>Long : {{longitude}}</p>
+    </div>
+    <div class="" ng-show="disp_coord">
+      <p>Lat : {{lati}}</p>
+      <p>Long : {{long}}</p>
+    </div>
+  </div>
+
+
+</div>

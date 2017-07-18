@@ -1,0 +1,193 @@
+
+.navbar{
+  background-color: #2E90CC;
+  color: white;
+  width:100%;
+  height: 50px;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:2;
+  box-shadow: 0px 3px 3px  rgba(0,0,0,0.2);
+}
+.bottombar {
+  height: 61px;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  bottom: -13px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: grey;
+  z-index:1;
+}
+.bottomicon{
+  height: 40px;
+  width: 40px;
+  margin-top: -4px;
+  margin-bottom: -19px;
+
+}
+.change{
+  color:#218289;
+}
+#city{
+  margin-bottom:0px;
+  color: white;
+  z-index: 3;
+}
+#state{
+  margin-top:-2px;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+a:hover,a:active{
+  text-decoration: none;
+  color: grey;
+}
+.search-card{
+  background-color: white;
+  width: 99.5%;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 1px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 0px 1px 1px  rgba(0,0,0,0.2);
+}
+#searchicon{
+  height: 30px;
+  width: 30px;
+  margin-top: 2px;
+  margin-left: 4px;
+  z-index:2;
+}
+#backimage{
+  width: 100%;
+  background-size: 100% 100%;
+}
+#nameiconp{
+  height:25px;
+  width:25px;
+  margin-left: -120px;
+  margin-top: 40px;
+}
+#emailicon{
+  height:20px;
+  width:28px;
+  margin-left: -120px;
+}
+#phoneiconp{
+  height:25px;
+  width:25px;
+  margin-left: -120px;
+}
+#profimage{
+  position: absolute;
+  height:65px;
+  width:65px;
+  margin-top:-45px;
+  margin-left:-20px;
+}
+.profline hr{
+  padding-top:150px;
+  border-bottom: 1px solid #218289;
+  position:fixed:
+  color:#218289;
+}
+#search-button{
+  height:55px;
+  width:55px;
+  z-index: 3;
+}
+.dis_btn{
+  width:96%;
+  height: 36px;
+  text-align:center;
+  color:white;
+  background-color: #218289;
+  border-radius: 5px;
+  font-size:1.2em;
+  margin-top: 20px;
+  margin-left: 8px;
+  box-shadow: 0px 3px 3px  rgba(0,0,0,0.2);
+}
+.apply_btn{
+  width:100%;
+  height: 36px;
+  text-align:center;
+  color:white;
+  background-color: #218289;
+  border-radius: 5px;
+  font-size:1.2em;
+  margin-top: 20px;
+  margin-left: 8px;
+  box-shadow: 0px 3px 3px  rgba(0,0,0,0.2);
+}
+.offline{
+  width: 100%;
+  height: 30px;
+  color: white;
+  background-color: #F44336;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: -60px;
+}
+.search-icon{
+  font-size: 2.2em;
+  padding-top: 5px;
+}{}
+#kp-logo{
+  height: 35px;
+  width: 35px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.sidebar-menu{
+  position: fixed;
+  width: 80%;
+  right: 0;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
+  background-color: white;
+  z-index: 100000000;
+  transition: all 0.4s ease-in-out;
+}
+.fa-times{
+  top: 10px;
+  color: black;
+}
+.hide-menu{
+  position: fixed;
+  margin-right: -80%;
+}
+.back-cover{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: black;
+  opacity: 0.7;
+}
+.menu{
+  font-size: 1.4em;
+  margin: 70px 0px 0px 25px;
+  color: #2E90CC;
+}
+#news-image {
+  width:100%;
+  height: 140px;
+
+  background-size:cover;
+
+  filter: brightness(60%);
+  z-index:1;
+
+}

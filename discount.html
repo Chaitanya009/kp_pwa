@@ -1,0 +1,163 @@
+<header>
+
+  <div class="upperBar">
+    <i class="material-icons" ng-click="goback()" style="padding:13px;color:white">arrow_back</i><h6 class="nav-heading"> Get Discount</h6>
+    <div>
+        <a href="#search"><i class="fa fa-search fa-2x" aria-hidden="true" id="search_icon_in"></i></a>
+    </div>
+    <!--Drop down menu-->
+    <button ng-controller="myCtrl" ng-click="toggleClass()" class="dropbtn" style="width: 10%; border: none; background: none;margin-right:24px">
+      <!-- <i class="fa fa-bars fa-2x" style="padding: 10px;"></i> -->
+      <i class="material-icons dropdown">more_vert</i>
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#profile"><button>Profile</button></a>
+      <a href="#myorders"><button>My Orders</button></a>
+      <button>Logout</button>
+
+    </div>
+  </div>
+</header>
+
+
+<!--texfield-->
+
+<div style="margin-top:60px">
+  <div class="card">
+    <div class="row">
+      <div class="col-xs-offset-3">
+        <input type="text" name="" value="" placeholder=" Your code" style="margin-top:20px">
+        <hr style="margin-top:-4px">
+      </div>
+      <div class="col-xs-4">
+        <div class="apply_btn">
+          <p style="padding-top:5px">Apply</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--list view-->
+<!--coupons-->
+<!--coupon detail-->
+
+<div class="card cardfull">
+  <div class="container" style="margin-top:4px;margin-bottom:-8px">
+    <p>Coupons</p>
+  </div>
+  <hr style="margin-top:4px">
+  <!--coupon Box-->
+  <div>
+    <!--Dashed Box-->
+    <div>
+      <div class="dashedBox" style="margin-left:10px;margin-right:10px;">
+        <div class="container">
+          <p style="margin-top:10px">25% off on full body checkups</p>
+          <p style="margin-top:-2px;margin-bottom:0px"><i class="fa fa-inr" style="color:grey"></i> <strike style="color:grey">150</strike> <span style="color:#218289">100</span></p>
+        </div>
+        <!--no of coupons-->
+        <div>
+          <div class="">
+            <p ng-click="toggle2 = !toggle2" style="margin-left:90px;margin-top:-21px;border: 1px solid white;width:95px">{{toggleText2}} <img ng-src="{{imgurl2}}" alt="" id="showmoreicon"></p>
+            <p ng-init="count=0" style="margin-left:70%;margin-top:-47px;padding-bottom:8px"><img src="img/MINUSFADED-01.png" alt="" id="minusfadicon" ng-click="count=count-1"><span style="font-size:1.4em"> {{count}} </span><img src="img/PLUS-01.png" alt="" id="plusicon" ng-click="dispbottbar();count=count+1"></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <hr>
+      </div>
+    </div>
+    <!--know more card-->
+
+    <div ng-show="cardshow2">
+
+      <div class="know">
+        <div class="days">
+          <ul style="padding-top:20px">
+            <li><img src="img/DATE-01.png" alt="" id="dateicon"></li>
+            <li style="margin-left:10px"><img src="img/SUNCLR-01.png" alt="" id="day"></li>
+            <li><img src="img/MONCLR-01.png" alt="" id="day"></li>
+            <li><img src="img/TUE-01.png" alt="" id="day"></li>
+            <li><img src="img/WED-01.png" alt="" id="day"></li>
+            <li><img src="img/THU-01.png" alt="" id="day"></li>
+            <li><img src="img/FRI-01.png" alt="" id="day"></li>
+            <li><img src="img/SAT-01.png" alt="" id="day"></li>
+          </ul>
+          <div class="">
+            <img src="img/TIME-01.png" alt="" id="clockicon">
+            <p class="timing"> 9:30 AM to 6:00 PM</p>
+          </div>
+        </div>
+        <div style="margin-left:40px;padding-bottom:20px;font-size:0.8em">
+          <ul>
+            <li>Full body checkups</li>
+            <li>Full body checkups</li>
+            <li>Full body checkups</li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- 2nd cuopon-->
+  <div>
+    <!--Dashed Box-->
+    <div>
+      <div class="dashedBox" style="margin-left:10px;margin-right:10px;">
+        <div class="container">
+          <p style="margin-top:10px">25% off on full body checkups</p>
+          <p style="margin-top:-2px;margin-bottom:0px"><i class="fa fa-inr" style="color:grey"></i> <strike style="color:grey">150</strike> <span style="color:#218289">100</span></p>
+        </div>
+        <!--no of coupons-->
+        <div>
+          <div class="">
+            <p ng-click="toggle21 = !toggle21" style="margin-left:90px;margin-top:-21px;border: 1px solid white;width:95px">{{toggleText21}} <img ng-src="{{imgurl21}}" alt="" id="showmoreicon"></p>
+            <p ng-init="count=0" style="margin-left:70%;margin-top:-47px;padding-bottom:8px"><img src="img/MINUSFADED-01.png" alt="" id="minusfadicon" ng-click="count=count-1"><span style="font-size:1.4em"> {{count}} </span><img src="img/PLUS-01.png" alt="" id="plusicon" ng-click="dispbottbar();count=count+1"></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <hr>
+      </div>
+    </div>
+    <!--know more card-->
+
+    <div ng-show="cardshow21">
+
+      <div class="know">
+        <div class="days">
+          <ul style="padding-top:20px">
+            <li><img src="img/DATE-01.png" alt="" id="dateicon"></li>
+            <li style="margin-left:10px"><img src="img/SUNCLR-01.png" alt="" id="day"></li>
+            <li><img src="img/MONCLR-01.png" alt="" id="day"></li>
+            <li><img src="img/TUE-01.png" alt="" id="day"></li>
+            <li><img src="img/WED-01.png" alt="" id="day"></li>
+            <li><img src="img/THU-01.png" alt="" id="day"></li>
+            <li><img src="img/FRI-01.png" alt="" id="day"></li>
+            <li><img src="img/SAT-01.png" alt="" id="day"></li>
+          </ul>
+          <div class="">
+            <img src="img/TIME-01.png" alt="" id="clockicon">
+            <p class="timing"> 9:30 AM to 6:00 PM</p>
+          </div>
+        </div>
+        <div style="margin-left:40px;padding-bottom:20px;font-size:0.8em">
+          <ul>
+            <li>Full body checkups</li>
+            <li>Full body checkups</li>
+            <li>Full body checkups</li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

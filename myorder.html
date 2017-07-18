@@ -1,0 +1,253 @@
+
+  <body style="background-color:#D4DFED" ng-app="starter" ng-controller="myorderscontroller">
+    <!--nav bar-->
+    <header>
+
+      <div class="upperBar">
+        <i class="material-icons" ng-click="goback()" style="padding:13px">arrow_back</i><h6 class="nav-heading"> My Orders</h6>
+        <div>
+            <a href="#search"><i class="fa fa-search fa-2x" aria-hidden="true" id="search_icon_in"></i></a>
+        </div>
+        <!--Drop down menu-->
+        <button ng-controller="myCtrl" ng-click="toggleClass()" class="dropbtn" style="width: 10%; border: none; background: none;">
+          <!-- <i class="fa fa-bars fa-2x" style="padding: 10px;"></i> -->
+          <i class="material-icons dropdown" >more_vert</i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#profile"><button>Profile</button></a>
+          <a href="#myorders"><button>My Orders</button></a>
+          <button>Logout</button>
+
+        </div>
+      </div>
+    </header>
+
+ <div class="" id="page">
+    <!--Myorder cards-->
+  <div style="margin-top:50px">
+    <!--active cards-->
+    <a href="#activeorder">
+    <div class="card cardfull">
+       <div class="border">
+         <img src="img/loadingpage.png" lazy-img="https://hrelate.in/img/user_profile/sakra-world-hospital-bellandur-pune438081496.jpg" alt="" id="hospitalImage">
+         <div class="container">
+           <div class="imageContentLeft">
+             <p>Sakara Hospital</p>
+           </div>
+           <div class="imageContentRight">
+             <p style="font-size:0.8em">Hebbal</p>
+           </div>
+
+         </div>
+
+       </div>
+
+      <!--Dashed Box-->
+      <div class="dashedBox">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8">
+               <p style="margin-left:10px">25% off on full body checkups</p>
+             </div>
+             <div class="col-xl-4">
+              <p style="margin-left:40px">Quantity:2</p>
+            </div>
+            </div>
+             <p style="margin-top:-5px;margin-bottom:2px"><i class="fa fa-inr" style="color:grey"></i> <strike style="color:grey">150</strike> <span style="color:#218289">100</span></p>
+
+          </div>
+          <div class="">
+
+          </div>
+      </div>
+      <!--date-->
+      <div class="">
+        <div class="">
+          <img ng-src="img/DATE-01.png" alt="" id="calendericon">
+        </div>
+        <div>
+          <p style="color:grey;font-size:0.8em;margin-left:45px;margin-top:-23px">29th JAN</p>
+        </div>
+        <div class="">
+          <p style="color:grey;font-size:0.9em;margin-left:50%;margin-top:-30px">5 More days remaining</p>
+        </div>
+     </div>
+
+    </div>
+    </a>
+    <!--expired cards-->
+    <a href="#expireorder">
+    <div class="card cardfull">
+       <div class="border">
+          <img src="img/expired.png" alt="" id="statusimage" >
+         <img src="img/loadingpage.png" lazy-img="https://hrelate.in/img/user_profile/sakra-world-hospital-bellandur-pune438081496.jpg" alt="" id="hospitalImage">
+
+         <div class="container">
+           <div class="imageContentLeft">
+             <p>Vedanta Hospital</p>
+           </div>
+           <div class="imageContentRight">
+             <p style="font-size:0.8em">Hebbal</p>
+           </div>
+
+
+         </div>
+
+       </div>
+
+      <!--Dashed Box-->
+      <div class="dashedBox">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8">
+               <p style="margin-left:10px">25% off on full body checkups</p>
+             </div>
+             <div class="col-xl-4">
+              <p style="margin-left:40px">Quantity:2</p>
+            </div>
+            </div>
+             <p style="margin-top:-5px;margin-bottom:2px"><i class="fa fa-inr" style="color:grey"></i> <strike style="color:grey">150</strike> <span style="color:#218289">100</span></p>
+
+          </div>
+          <div class="">
+
+          </div>
+      </div>
+      <!--date-->
+      <div class="">
+        <div class="">
+          <img ng-src="img/DATE-01.png" alt="" id="calendericon">
+        </div>
+        <div>
+          <p style="color:grey;font-size:0.8em;margin-left:45px;margin-top:-23px">29th JAN</p>
+        </div>
+
+     </div>
+
+    </div>
+    </a>
+    <!--cancelled cards-->
+    <a href="#cancelledorder">
+    <div class="card cardfull">
+       <div class="border">
+          <img src="img/cancelled.png" alt="" id="statusimage" >
+         <img src="img/loadingpage.png" lazy-img="https://hrelate.in/img/user_profile/sakra-world-hospital-bellandur-pune438081496.jpg" alt="" id="hospitalImage">
+
+         <div class="container">
+           <div class="imageContentLeft">
+             <p>Vedanta Hospital</p>
+           </div>
+           <div class="imageContentRight">
+             <p style="font-size:0.8em">Hebbal</p>
+           </div>
+
+
+         </div>
+
+       </div>
+
+      <!--Dashed Box-->
+      <div class="dashedBox">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8">
+               <p style="margin-left:10px">25% off on full body checkups</p>
+             </div>
+             <div class="col-xl-4">
+              <p style="margin-left:40px">Quantity:2</p>
+            </div>
+            </div>
+             <p style="margin-top:-5px;margin-bottom:2px"><i class="fa fa-inr" style="color:grey"></i> <strike style="color:grey">150</strike> <span style="color:#218289">100</span></p>
+
+          </div>
+          <div class="">
+
+          </div>
+      </div>
+      <!--date-->
+      <div class="">
+        <div class="">
+          <img ng-src="img/DATE-01.png" alt="" id="calendericon">
+        </div>
+        <div>
+          <p style="color:grey;font-size:0.8em;margin-left:45px;margin-top:-23px">29th JAN</p>
+        </div>
+
+     </div>
+
+    </div>
+
+
+
+  </div>
+
+  </div>
+  </a>
+  <!--redeemed cards-->
+  <a href="#redeemedorder">
+  <div class="card cardfull">
+     <div class="border">
+        <img ng-src="img/redeemed.png" alt="" id="statusimage" >
+       <img src="img/loadingpage.png" lazy-img="https://hrelate.in/img/user_profile/sakra-world-hospital-bellandur-pune438081496.jpg" alt="" id="hospitalImage">
+
+       <div class="container">
+         <div class="imageContentLeft">
+           <p>Vedanta Hospital</p>
+         </div>
+         <div class="imageContentRight">
+           <p style="font-size:0.8em">Hebbal</p>
+         </div>
+
+
+       </div>
+
+     </div>
+
+    <!--Dashed Box-->
+    <div class="dashedBox">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8">
+             <p style="margin-left:10px">25% off on full body checkups</p>
+           </div>
+           <div class="col-xl-4">
+            <p style="margin-left:40px">Quantity:2</p>
+          </div>
+          </div>
+           <p style="margin-top:-5px;margin-bottom:2px"><i class="fa fa-inr" style="color:grey"></i> <strike style="color:grey">150</strike> <span style="color:#218289">100</span></p>
+
+        </div>
+        <div class="">
+
+        </div>
+    </div>
+    <!--date-->
+    <div class="">
+      <div class="">
+        <img ng-src="img/DATE-01.png" alt="" id="calendericon">
+      </div>
+      <div>
+        <p style="color:grey;font-size:0.8em;margin-left:45px;margin-top:-23px">29th JAN</p>
+      </div>
+
+   </div>
+
+  </div>
+</a>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
