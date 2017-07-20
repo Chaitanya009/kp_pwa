@@ -61,7 +61,8 @@ body{
   width: 100%;
 
   color:white;
-  background-color:#218289;
+  background-color:#2E90CC;
+  z-index: 100000000000000;
 }
 .doctor{
   margin-top: -5px;

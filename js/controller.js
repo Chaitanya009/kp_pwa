@@ -276,25 +276,6 @@ app.controller('hospdetailcontroller', function($scope, $rootScope,$routeParams)
 
 app.controller('eventdetailscontroller', function($scope, $rootScope){
 
-  $('.toggle-menu').bind('click', function(){
-    var r = angular.element( document.querySelector( '.sidebar-menu' ) );
-    r.removeClass('hide-menu');
-    var a = angular.element( document.querySelector( '#back-cover' ) );
-    a.addClass('back-cover');
-  })
-  $('#cancel').bind('click', function(){
-    var r = angular.element( document.querySelector( '#back-cover' ) );
-    r.removeClass('back-cover');
-    var a = angular.element( document.querySelector( '.sidebar-menu' ) );
-    a.addClass('hide-menu');
-  })
-  $('#back-cover').bind('click', function(){
-    var r = angular.element( document.querySelector( '#back-cover' ) );
-    r.removeClass('back-cover');
-    var a = angular.element( document.querySelector( '.sidebar-menu' ) );
-    a.addClass('hide-menu');
-  })
-
   $scope.pageClass = 'page-trans';
   //back button
   $scope.goback = function(){
@@ -339,6 +320,14 @@ app.controller('eventdetailscontroller', function($scope, $rootScope){
        console.log("get directions");
        launchnavigator.navigate("London, UK");
      };
+
+     var d = angular.element( document.querySelector('#bottomBar'));
+     d.css('display','none');
+     //display buynow bar
+     $scope.dispbottbar = function(){
+       var d = angular.element( document.querySelector('#bottomBar'));
+       d.css('display','block');
+     }
 
 });
 
